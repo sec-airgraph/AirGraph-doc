@@ -132,6 +132,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -144,7 +146,10 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/rtm_keras.rst.txt" rel="nofollow"> View page source</a>
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/sec-airgraph/AirGraph" class="fa fa-github"> Edit on GitHub</a>
+            
           
         
       </li>
@@ -173,7 +178,7 @@
 <ul class="simple">
 <li>C++の場合</li>
 </ul>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;config_declare&quot;&gt;</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;config_declare&quot;&gt;</span>
 <span class="cm">/*!</span>
 <span class="cm"> *</span>
 <span class="cm"> * - Name:  dataset_dir_path</span>
@@ -183,7 +188,7 @@
 <span class="c1">// &lt;/rtc-template&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
 <span class="p">{</span>
   <span class="c1">// Bind variables and configuration variable</span>
   <span class="n">bindParameter</span><span class="p">(</span><span class="s">&quot;dataset_dir_path&quot;</span><span class="p">,</span> <span class="n">m_dataset_dir_path</span><span class="p">,</span> <span class="s">&quot;/opt/AirGraph/data/datasets/SampleDataset/&quot;</span><span class="p">);</span>
@@ -195,7 +200,7 @@
 <ul class="simple">
 <li>Pythonの場合</li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
         <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">DataFlowComponentBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">)</span>
         <span class="c1"># initialize of configuration-data.</span>
         <span class="c1"># &lt;rtc-template block=&quot;init_conf_param&quot;&gt;</span>
@@ -231,7 +236,7 @@
 <ul class="simple">
 <li>C++の場合</li>
 </ul>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;config_declare&quot;&gt;</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;config_declare&quot;&gt;</span>
 <span class="cm">/*!</span>
 <span class="cm"> *</span>
 <span class="cm"> * - Name:  dnn_model_path</span>
@@ -241,7 +246,7 @@
 <span class="c1">// &lt;/rtc-template&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
 <span class="p">{</span>
   <span class="c1">// Bind variables and configuration variable</span>
   <span class="n">bindParameter</span><span class="p">(</span><span class="s">&quot;dnn_model_path&quot;</span><span class="p">,</span> <span class="n">m_dnn_model_path</span><span class="p">,</span> <span class="s">&quot;/opt/AirGraph/data/keras_models/MnistSample/MnistSample.json&quot;</span><span class="p">);</span>
@@ -253,7 +258,7 @@
 <ul class="simple">
 <li>Pythonの場合</li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
         <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">DataFlowComponentBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">)</span>
         <span class="c1"># initialize of configuration-data.</span>
         <span class="c1"># &lt;rtc-template block=&quot;init_conf_param&quot;&gt;</span>

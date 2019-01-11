@@ -157,6 +157,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -169,7 +171,10 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/rtm.rst.txt" rel="nofollow"> View page source</a>
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/sec-airgraph/AirGraph" class="fa fa-github"> Edit on GitHub</a>
+            
           
         
       </li>
@@ -519,13 +524,13 @@
 <ul class="simple">
 <li>C++の場合</li>
 </ul>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;inport_declare&quot;&gt;</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;inport_declare&quot;&gt;</span>
 <span class="n">RTC</span><span class="p">::</span><span class="n">TimedLong</span> <span class="n">m_port</span><span class="p">;</span>
 <span class="n">InPort</span><span class="p">&lt;</span><span class="n">RTC</span><span class="p">::</span><span class="n">TimedLong</span><span class="p">&gt;</span> <span class="n">m_portIn</span><span class="p">;</span>
 <span class="c1">// &lt;/rtc-template&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">cpp_test</span><span class="p">::</span><span class="n">cpp_test</span><span class="p">(</span><span class="n">RTC</span><span class="p">::</span><span class="n">Manager</span><span class="p">*</span> <span class="n">manager</span><span class="p">)</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="n">cpp_test</span><span class="p">::</span><span class="n">cpp_test</span><span class="p">(</span><span class="n">RTC</span><span class="p">::</span><span class="n">Manager</span><span class="p">*</span> <span class="n">manager</span><span class="p">)</span>
     <span class="c1">// &lt;rtc-template block=&quot;initializer&quot;&gt;</span>
   <span class="p">:</span> <span class="n">RTC</span><span class="p">::</span><span class="n">DataFlowComponentBase</span><span class="p">(</span><span class="n">manager</span><span class="p">),</span>
     <span class="n">m_portIn</span><span class="p">(</span><span class="s">&quot;port&quot;</span><span class="p">,</span> <span class="n">m_port</span><span class="p">)</span>
@@ -543,7 +548,7 @@
 <ul class="simple">
 <li>Pythonの場合</li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
         <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">DataFlowComponentBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_d_port</span> <span class="o">=</span> <span class="n">RTC</span><span class="o">.</span><span class="n">TimedLong</span><span class="p">(</span><span class="n">RTC</span><span class="o">.</span><span class="n">Time</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">)</span>
@@ -640,7 +645,7 @@
 <ul class="simple">
 <li>C++の場合</li>
 </ul>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// CORBA Port declaration</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="c1">// CORBA Port declaration</span>
 <span class="c1">// &lt;rtc-template block=&quot;corbaport_declare&quot;&gt;</span>
 <span class="n">RTC</span><span class="p">::</span><span class="n">CorbaPort</span> <span class="n">m_servicePortPort</span><span class="p">;</span>
 <span class="c1">// &lt;/rtc-template&gt;</span>
@@ -651,7 +656,7 @@
 <span class="c1">// &lt;/rtc-template&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">cpp_test</span><span class="p">::</span><span class="n">cpp_test</span><span class="p">(</span><span class="n">RTC</span><span class="p">::</span><span class="n">Manager</span><span class="p">*</span> <span class="n">manager</span><span class="p">)</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="n">cpp_test</span><span class="p">::</span><span class="n">cpp_test</span><span class="p">(</span><span class="n">RTC</span><span class="p">::</span><span class="n">Manager</span><span class="p">*</span> <span class="n">manager</span><span class="p">)</span>
     <span class="c1">// &lt;rtc-template block=&quot;initializer&quot;&gt;</span>
   <span class="p">:</span> <span class="n">RTC</span><span class="p">::</span><span class="n">DataFlowComponentBase</span><span class="p">(</span><span class="n">manager</span><span class="p">),</span>
     <span class="n">m_servicePortPort</span><span class="p">(</span><span class="s">&quot;servicePort&quot;</span><span class="p">)</span>
@@ -672,7 +677,7 @@
 <ul class="simple">
 <li>Pythonの場合</li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
         <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">DataFlowComponentBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_servicePortPort</span> <span class="o">=</span> <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">CorbaPort</span><span class="p">(</span><span class="s2">&quot;servicePort&quot;</span><span class="p">)</span>
@@ -738,7 +743,7 @@
 <ul class="simple">
 <li>C++の場合</li>
 </ul>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;config_declare&quot;&gt;</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="c1">// &lt;rtc-template block=&quot;config_declare&quot;&gt;</span>
 <span class="cm">/*!</span>
 <span class="cm"> *</span>
 <span class="cm"> * - Name:  conf_name0</span>
@@ -748,7 +753,7 @@
 <span class="c1">// &lt;/rtc-template&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">cpp_test</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
+<div class="highlight-csharp"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">cpp_test</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
 <span class="p">{</span>
   <span class="c1">// Bind variables and configuration variable</span>
   <span class="n">bindParameter</span><span class="p">(</span><span class="s">&quot;conf_name0&quot;</span><span class="p">,</span> <span class="n">m_conf_name0</span><span class="p">,</span> <span class="s">&quot;0&quot;</span><span class="p">);</span>
@@ -760,7 +765,7 @@
 <ul class="simple">
 <li>Pythonの場合</li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">):</span>
         <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">DataFlowComponentBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">)</span>
         <span class="c1"># &lt;rtc-template block=&quot;init_conf_param&quot;&gt;</span>
         <span class="sd">&quot;&quot;&quot;</span>
@@ -803,7 +808,7 @@
 <a class="reference internal image-reference" href="_images/rtm_build.png"><img alt="_images/rtm_build.png" class="align-center" src="_images/rtm_build.png" style="width: 70%;" /></a>
 <ol class="arabic simple">
 <li>画面上部の[Component]-[Build All]を押下します．</li>
-<li>コンソール画面が表示されますので，左側の画面に&quot;Success&quot;と表示されれば成功です．</li>
+<li>コンソール画面が表示されますので，左側の画面に&#8221;Success&#8221;と表示されれば成功です．</li>
 </ol>
 <blockquote>
 <div><ul class="simple">
@@ -811,7 +816,7 @@
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="3">
-<li>C++で&quot;Failed&quot;と表示された場合は，ソースコードの再編集を行ってください．</li>
+<li>C++で&#8221;Failed&#8221;と表示された場合は，ソースコードの再編集を行ってください．</li>
 </ol>
 <blockquote>
 <div><ul class="simple">
@@ -824,7 +829,7 @@
 <a class="reference internal image-reference" href="_images/rtm_run.png"><img alt="_images/rtm_run.png" class="align-center" src="_images/rtm_run.png" style="width: 70%;" /></a>
 <ol class="arabic simple">
 <li>画面上部の[Component]-[Run Package]を押下します．</li>
-<li>コンソール画面が表示されますので，左側の画面に&quot;Activate&quot;と表示されれば成功です．</li>
+<li>コンソール画面が表示されますので，左側の画面に&#8221;Activate&#8221;と表示されれば成功です．</li>
 </ol>
 <blockquote>
 <div><ul class="simple">
@@ -846,7 +851,7 @@
 <a class="reference internal image-reference" href="_images/rtm_stop.png"><img alt="_images/rtm_stop.png" class="align-center" src="_images/rtm_stop.png" style="width: 70%;" /></a>
 <ol class="arabic simple">
 <li>画面上部の[Component]-[Terminate Package]を押下します．</li>
-<li>コンソール画面が表示されますので，左側の画面に&quot;Kill Process&quot;などが表示されれば成功です．</li>
+<li>コンソール画面が表示されますので，左側の画面に&#8221;Kill Process&#8221;などが表示されれば成功です．</li>
 </ol>
 </div>
 <div class="section" id="git">
@@ -855,7 +860,7 @@
 <li>Gitリポジトリと連携する場合，あらかじめgitconfgの設定が必要となります．</li>
 <li>はじめてCommitを行う場合には，IDEを実行しているサーバ上でコンソールからgitconfigの設定を行ってください．</li>
 </ul>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config --global user.name <span class="s2">&quot;your name&quot;</span>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git config --global user.name <span class="s2">&quot;your name&quot;</span>
 $ git config --global user.email youremail@example.com
 </pre></div>
 </div>
