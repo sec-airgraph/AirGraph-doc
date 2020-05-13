@@ -17,34 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="7. ロボット開発とDNN開発の連携について" href="rtm_keras.html" />
+    <link rel="next" title="7. ロボット開発とDeep Learning開発の連携について" href="rtm_keras.html" />
     <link rel="prev" title="5. AirGraph (RTM Editor)" href="rtm.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -105,7 +108,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rtm_keras.html">7. ロボット開発とDNN開発の連携について</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rtm_keras.html">7. ロボット開発とDeep Learning開発の連携について</a></li>
 <li class="toctree-l1"><a class="reference internal" href="end.html">8. ライセンス</a></li>
 <li class="toctree-l1"><a class="reference internal" href="end.html#id2">9. 不具合・改善要望について</a></li>
 <li class="toctree-l1"><a class="reference internal" href="end.html#id3">10. お問い合わせ</a></li>
@@ -184,21 +187,21 @@
 <h2>6.1. 概要<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>AirGraph(Keras Editor)の主な機能は次の通りです．</p>
 <ul class="simple">
-<li>WEBブラウザ上でKerasによるDNN開発が可能</li>
-<li>作成したモデル単位での一覧・再利用が可能</li>
-<li>既存のKerasモデルをインポートすることが可能</li>
+<li><p>WEBブラウザ上でKerasによるDeep Learning開発が可能</p></li>
+<li><p>作成したモデル単位での一覧・再利用が可能</p></li>
+<li><p>既存のKerasモデルをインポートすることが可能</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/keras_ide.png"><img alt="_images/keras_ide.png" class="align-center" src="_images/keras_ide.png" style="width: 70%;" /></a>
 <ul class="simple">
-<li>画面構成</li>
+<li><p>画面構成</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li>画面上部：操作メニューエリア</li>
-<li>画面左部：モデル・レイヤーの一覧表示エリア</li>
-<li>画面右部：モデル・レイヤーのプロパティ設定エリア</li>
-<li>画面下部：モデルのJSON表示・編集エリア</li>
-<li>画面中央：モデル開発エリア</li>
+<li><p>画面上部：操作メニューエリア</p></li>
+<li><p>画面左部：モデル・レイヤーの一覧表示エリア</p></li>
+<li><p>画面右部：モデル・レイヤーのプロパティ設定エリア</p></li>
+<li><p>画面下部：モデルのJSON表示・編集エリア</p></li>
+<li><p>画面中央：モデル開発エリア</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -210,8 +213,8 @@
 <h3>6.2.1. モデルを新規に作成する<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <a class="reference internal image-reference" href="_images/keras_create_model.png"><img alt="_images/keras_create_model.png" class="align-center" src="_images/keras_create_model.png" style="width: 70%;" /></a>
 <ol class="arabic simple">
-<li>画面左部の[New]-[Functional_API]を画面中央にドラッグ＆ドロップします．</li>
-<li>画面左部の[Workspace]に新しいモデルが表示され，画面中央には何もない状態になります．</li>
+<li><p>画面左部の[New]-[Functional_API]を画面中央にドラッグ＆ドロップします．</p></li>
+<li><p>画面左部の[Workspace]に新しいモデルが表示され，画面中央には何もない状態になります．</p></li>
 </ol>
 </div>
 <div class="section" id="id3">
@@ -224,15 +227,15 @@
 <h3>6.2.3. モデルのプロパティを変更する<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <a class="reference internal image-reference" href="_images/keras_update_model.png"><img alt="_images/keras_update_model.png" class="align-center" src="_images/keras_update_model.png" style="width: 70%;" /></a>
 <ol class="arabic simple">
-<li>以下の方法でモデルの設定画面を起動します．</li>
+<li><p>以下の方法でモデルの設定画面を起動します．</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>レイヤーが未選択の状態で，画面下部の[Property]ボタンを押下する（画面右部に表示されます）．</li>
+<li><p>レイヤーが未選択の状態で，画面下部の[Property]ボタンを押下する（画面右部に表示されます）．</p></li>
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>必要な箇所を変更し，[Update]ボタンを押下します．</li>
+<li><p>必要な箇所を変更し，[Update]ボタンを押下します．</p></li>
 </ol>
 </div>
 <div class="section" id="id5">
@@ -240,9 +243,9 @@
 <a class="reference internal image-reference" href="_images/keras_add_layer.png"><img alt="_images/keras_add_layer.png" class="align-center" src="_images/keras_add_layer.png" style="width: 50%;" /></a>
 <a class="reference internal image-reference" href="_images/keras_layer_added.png"><img alt="_images/keras_layer_added.png" class="align-center" src="_images/keras_layer_added.png" style="width: 40%;" /></a>
 <ol class="arabic simple">
-<li>画面左部の[Layer]の任意のレイヤーを画面中央にドラッグ＆ドロップします．</li>
-<li>画面中央のモデルに新たなレイヤーが表示されます．</li>
-<li>追加したレイヤーを削除する場合は，レイヤーを選択しキーボードの[Delete]キーを押下します．</li>
+<li><p>画面左部の[Layer]の任意のレイヤーを画面中央にドラッグ＆ドロップします．</p></li>
+<li><p>画面中央のモデルに新たなレイヤーが表示されます．</p></li>
+<li><p>追加したレイヤーを削除する場合は，レイヤーを選択しキーボードの[Delete]キーを押下します．</p></li>
 </ol>
 </div>
 <div class="section" id="id6">
@@ -250,23 +253,23 @@
 <a class="reference internal image-reference" href="_images/keras_add_input_layer.png"><img alt="_images/keras_add_input_layer.png" class="align-center" src="_images/keras_add_input_layer.png" style="width: 40%;" /></a>
 <a class="reference internal image-reference" href="_images/keras_input_layer_added.png"><img alt="_images/keras_input_layer_added.png" class="align-center" src="_images/keras_input_layer_added.png" style="width: 40%;" /></a>
 <ol class="arabic simple">
-<li>画面中央の[+Input]ボタンを押下します．</li>
-<li>画面中央のモデルに新たに入力レイヤーが表示されます．</li>
+<li><p>画面中央の[+Input]ボタンを押下します．</p></li>
+<li><p>画面中央のモデルに新たに入力レイヤーが表示されます．</p></li>
 </ol>
 </div>
 <div class="section" id="id7">
 <h3>6.2.6. レイヤーのプロパティを変更する<a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <a class="reference internal image-reference" href="_images/keras_update_layer.png"><img alt="_images/keras_update_layer.png" class="align-center" src="_images/keras_update_layer.png" style="width: 70%;" /></a>
 <ol class="arabic simple">
-<li>以下の方法でレイヤーの設定画面を起動します．</li>
+<li><p>以下の方法でレイヤーの設定画面を起動します．</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>レイヤーを選択している状態で，画面下部の[Property]ボタンを押下する（画面右部に表示されます）．</li>
+<li><p>レイヤーを選択している状態で，画面下部の[Property]ボタンを押下する（画面右部に表示されます）．</p></li>
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>必要な箇所を変更し，[Update]ボタンを押下します．</li>
+<li><p>必要な箇所を変更し，[Update]ボタンを押下します．</p></li>
 </ol>
 </div>
 <div class="section" id="id8">
@@ -275,65 +278,64 @@
 <a class="reference internal image-reference" href="_images/keras_drag_new_link.png"><img alt="_images/keras_drag_new_link.png" class="align-center" src="_images/keras_drag_new_link.png" style="width: 40%;" /></a>
 <a class="reference internal image-reference" href="_images/keras_new_link_created.png"><img alt="_images/keras_new_link_created.png" class="align-center" src="_images/keras_new_link_created.png" style="width: 40%;" /></a>
 <ol class="arabic simple">
-<li>画面中央のモデルのうち，起点となるレイヤーを選択し，右クリックメニューから[Create New Link]を選択します．</li>
-<li>マウスカーソルに矢印の先頭が付いてくるため，接続先となるレイヤーをクリックする。</li>
-<li>画面中央表示が更新され，指定したレイヤ間が矢印で接続される。</li>
-<li>接続を削除する場合は，削除したい矢印を選択し，キーボードの[Delete]キーを押下すると，接続が削除される。</li>
+<li><p>画面中央のモデルのうち，起点となるレイヤーを選択し，右クリックメニューから[Create New Link]を選択します．</p></li>
+<li><p>マウスカーソルに矢印の先頭が付いてくるため，接続先となるレイヤーをクリックする。</p></li>
+<li><p>画面中央表示が更新され，指定したレイヤ間が矢印で接続される。</p></li>
+<li><p>接続を削除する場合は，削除したい矢印を選択し，キーボードの[Delete]キーを押下すると，接続が削除される。</p></li>
 </ol>
 </div>
 <div class="section" id="id9">
 <h3>6.2.8. モデルを保存する<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ol class="arabic simple">
-<li>以下のいずれかの方法でパッケージおよびコンポーネントの保存を行います．</li>
+<li><p>以下のいずれかの方法でパッケージおよびコンポーネントの保存を行います．</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>画面上部の[File]-[Save All]を押下する．</li>
-<li>画面中央の白い領域で表示される右クリックメニューの[save All]を押下する.</li>
+<li><p>画面上部の[File]-[Save All]を押下する．</p></li>
+<li><p>画面中央の白い領域で表示される右クリックメニューの[save All]を押下する.</p></li>
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>全ての変更が保存されます．</li>
+<li><p>全ての変更が保存されます．</p></li>
 </ol>
 </div>
 <div class="section" id="id10">
 <h3>6.2.9. データセットを登録する<a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p>AirGraphでは，学習・検証用にデータセットを登録する機能があります． <a class="footnote-reference" href="#id12" id="id11">[1]</a></p>
+<p>AirGraphでは，学習・検証用にデータセットを登録する機能があります． <a class="footnote-reference brackets" href="#id12" id="id11">1</a></p>
 <ol class="arabic simple">
-<li>画面上部の[Dataset]-[Upload Dataset]を押下する．</li>
-<li>ファイルダイアログが表示されるので，アップロードしたいデータセットをまとめたzipファイルを選択し，アップロードする．</li>
+<li><p>画面上部の[Dataset]-[Upload Dataset]を押下する．</p></li>
+<li><p>ファイルダイアログが表示されるので，アップロードしたいデータセットをまとめたzipファイルを選択し，アップロードする．</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>データセットのディレクトリ構成は以下のようになっている必要があります．以下の場合，データセットは <strong>dataset1</strong> という名称で登録されます．</li>
+<li><p>データセットのディレクトリ構成は以下のようになっている必要があります．以下の場合，データセットは <strong>dataset1</strong> という名称で登録されます．</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li>hoge.zip</li>
+<li><p>hoge.zip</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li>hoge/dataset1/data1.jpg</li>
-<li>hoge/dataset1/data2.jpg</li>
-<li>hoge/dataset1/data3.jpg</li>
-<li>hoge/dataset1/data4.jpg</li>
+<li><p>hoge/dataset1/data1.jpg</p></li>
+<li><p>hoge/dataset1/data2.jpg</p></li>
+<li><p>hoge/dataset1/data3.jpg</p></li>
+<li><p>hoge/dataset1/data4.jpg</p></li>
 </ul>
 </div></blockquote>
 </div></blockquote>
 <ul class="simple">
-<li>同名のデータセットを登録した場合，新しいデータセットで全て上書きされます．</li>
+<li><p>同名のデータセットを登録した場合，新しいデータセットで全て上書きされます．</p></li>
 </ul>
 </div></blockquote>
 <ol class="arabic simple" start="3">
-<li>アップロード後，画面右側の[Model]-[Dataset]のプルダウンメニューからアップロードしたデータセットが選択可能となります．</li>
+<li><p>アップロード後，画面右側の[Model]-[Dataset]のプルダウンメニューからアップロードしたデータセットが選択可能となります．</p></li>
 </ol>
 <p class="rubric">注</p>
-<table class="docutils footnote" frame="void" id="id12" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id11">[1]</a></td><td>現状，データセットの削除機能はありません．</td></tr>
-</tbody>
-</table>
+<dl class="footnote brackets">
+<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id11">1</a></span></dt>
+<dd><p>現状，データセットの削除機能はありません．</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="id13">
 <h3>6.2.10. 学習を行う<a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -341,25 +343,25 @@
 <a class="reference internal image-reference" href="_images/keras_edit_data_maker.png"><img alt="_images/keras_edit_data_maker.png" class="align-center" src="_images/keras_edit_data_maker.png" style="width: 70%;" /></a>
 <a class="reference internal image-reference" href="_images/keras_learn_menu.png"><img alt="_images/keras_learn_menu.png" class="align-center" src="_images/keras_learn_menu.png" style="width: 40%;" /></a>
 <ol class="arabic simple">
-<li>ワークスペースにモデルが表示されている状態で，画面中央の白い領域で表示される右クリックメニューの[edit Data Maker]を押下する．</li>
-<li>表示されたポップアップ画面で，Pythonスクリプトを編集する．</li>
+<li><p>ワークスペースにモデルが表示されている状態で，画面中央の白い領域で表示される右クリックメニューの[edit Data Maker]を押下する．</p></li>
+<li><p>表示されたポップアップ画面で，Pythonスクリプトを編集する．</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li>Pythonスクリプトには，コマンドライン引数として以下の情報が渡されます</li>
+<li><p>Pythonスクリプトには，コマンドライン引数として以下の情報が渡されます</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li>第1引数: 編集中モデルのモデルファイル(json)のファイルパス</li>
-<li>第2引数: 学習した重みファイル(hdf5)を保存するファイルパス</li>
-<li>第3引数: TensorBoard向けのログファイルを出力するディレクトリパス</li>
-<li>第4引数: データセットのディレクトリパス <a class="footnote-reference" href="#id16" id="id14">[2]</a></li>
+<li><p>第1引数: 編集中モデルのモデルファイル(json)のファイルパス</p></li>
+<li><p>第2引数: 学習した重みファイル(hdf5)を保存するファイルパス</p></li>
+<li><p>第3引数: TensorBoard向けのログファイルを出力するディレクトリパス</p></li>
+<li><p>第4引数: データセットのディレクトリパス <a class="footnote-reference brackets" href="#id16" id="id14">2</a></p></li>
 </ul>
 </div></blockquote>
 </div></blockquote>
 <ol class="arabic simple" start="3">
-<li>スクリプト編集完了後，ポップアップ画面を閉じ，モデルの保存を実施する．</li>
-<li>画面上部の[Tools]-[learn]を押下すると，Pythonスクリプトが実行され，コンソール出力を確認するポップアップ画面が表示される．</li>
+<li><p>スクリプト編集完了後，ポップアップ画面を閉じ，モデルの保存を実施する．</p></li>
+<li><p>画面上部の[Tools]-[learn]を押下すると，Pythonスクリプトが実行され，コンソール出力を確認するポップアップ画面が表示される．</p></li>
 </ol>
 </div>
 </div>
@@ -368,15 +370,14 @@
 <div class="section" id="git">
 <h3>6.3.1. Gitリポジトリの連携について<a class="headerlink" href="#git" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li>現時点で，AirGraph上から作成したモデルをGitリポジトリとして登録する機能はありません．</li>
+<li><p>現時点で，AirGraph上から作成したモデルをGitリポジトリとして登録する機能はありません．</p></li>
 </ul>
 <p class="rubric">注</p>
-<table class="docutils footnote" frame="void" id="id16" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id14">[2]</a></td><td>データセット未指定の場合は空文字が渡されます</td></tr>
-</tbody>
-</table>
+<dl class="footnote brackets">
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id14">2</a></span></dt>
+<dd><p>データセット未指定の場合は空文字が渡されます</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -389,10 +390,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="rtm_keras.html" class="btn btn-neutral float-right" title="7. ロボット開発とDNN開発の連携について" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="rtm_keras.html" class="btn btn-neutral float-right" title="7. ロボット開発とDeep Learning開発の連携について" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="rtm.html" class="btn btn-neutral" title="5. AirGraph (RTM Editor)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="rtm.html" class="btn btn-neutral float-left" title="5. AirGraph (RTM Editor)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -401,7 +402,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, System Engineering Consultants Co., LTD..
+        &copy; Copyright 2018, System Engineering Consultants Co., LTD.
 
     </p>
   </div>
@@ -418,33 +419,16 @@
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'',
-            LANGUAGE:'ja',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/translations.js"></script>
-
-  
-
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
