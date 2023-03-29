@@ -1,68 +1,37 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="ja" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="ja" > <!--<![endif]-->
+<html class="writer-html5" lang="ja" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7. ロボット開発とDeep Learning開発の連携について &mdash; AirGraph  ドキュメント</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script type="text/javascript" src="_static/translations.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
     <link rel="next" title="8. ライセンス" href="end.html" />
     <link rel="prev" title="6. AirGraph (Keras Editor)" href="keras.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="index.html" class="icon icon-home"> AirGraph
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
+              <div class="version">
+                2.0
+              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -70,17 +39,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="start.html">1. AirGraphについて</a></li>
 <li class="toctree-l1"><a class="reference internal" href="start.html#id1">2. 共同研究のご紹介</a></li>
@@ -99,77 +58,35 @@
 <li class="toctree-l1"><a class="reference internal" href="end.html#id3">10. お問い合わせ</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">AirGraph</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>7. ロボット開発とDeep Learning開発の連携について</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>ロボット開発とDeep Learning開発の連携について</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
-            
               <!-- User defined GitHub URL -->
               <a href="https://github.com/sec-airgraph/AirGraph" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="deep-learning">
-<h1>7. ロボット開発とDeep Learning開発の連携について<a class="headerlink" href="#deep-learning" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="section" id="id1">
-<h2>7.1. ロボット開発からDeep Learning開発への連携機能<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+             
+  <section id="deep-learning">
+<h1><span class="section-number">7. </span>ロボット開発とDeep Learning開発の連携について<a class="headerlink" href="#deep-learning" title="この見出しへのパーマリンク"></a></h1>
+<section id="id1">
+<h2><span class="section-number">7.1. </span>ロボット開発からDeep Learning開発への連携機能<a class="headerlink" href="#id1" title="この見出しへのパーマリンク"></a></h2>
 <ol class="arabic simple">
 <li><p>AirGraph(RTM Editor)側でコンポーネントのプロパティ設定にてDatasetを定義すると，サーバ上にDataset領域が作成されます．</p></li>
 </ol>
@@ -188,16 +105,16 @@
 <span class="cm"> * - Name:  dataset_dir_path</span>
 <span class="cm"> * - DefaultValue: /opt/AirGraph/data/datasets/SampleDataset/</span>
 <span class="cm"> */</span>
-<span class="n">std</span><span class="p">::</span><span class="kt">string</span> <span class="n">m_dataset_dir_path</span><span class="p">;</span>
+<span class="n">std</span><span class="p">::</span><span class="kt">string</span><span class="w"> </span><span class="n">m_dataset_dir_path</span><span class="p">;</span>
 <span class="c1">// &lt;/rtc-template&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span><span class="w"> </span><span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
 <span class="p">{</span>
-  <span class="c1">// Bind variables and configuration variable</span>
-  <span class="n">bindParameter</span><span class="p">(</span><span class="s">&quot;dataset_dir_path&quot;</span><span class="p">,</span> <span class="n">m_dataset_dir_path</span><span class="p">,</span> <span class="s">&quot;/opt/AirGraph/data/datasets/SampleDataset/&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Bind variables and configuration variable</span>
+<span class="w">  </span><span class="n">bindParameter</span><span class="p">(</span><span class="s">&quot;dataset_dir_path&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">m_dataset_dir_path</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/opt/AirGraph/data/datasets/SampleDataset/&quot;</span><span class="p">);</span>
 
-  <span class="k">return</span> <span class="n">RTC</span><span class="p">::</span><span class="n">RTC_OK</span><span class="p">;</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">RTC</span><span class="p">::</span><span class="n">RTC_OK</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -208,7 +125,7 @@
         <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">DataFlowComponentBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">)</span>
         <span class="c1"># initialize of configuration-data.</span>
         <span class="c1"># &lt;rtc-template block=&quot;init_conf_param&quot;&gt;</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">         - Name:  dataset_dir_path</span>
 <span class="sd">         - DefaultValue: /opt/AirGraph/data/datasets/SampleDataset/</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -226,17 +143,17 @@
 </div></blockquote>
 <a class="reference internal image-reference" href="_images/keras_select_dataset.png"><img alt="_images/keras_select_dataset.png" class="align-center" src="_images/keras_select_dataset.png" style="width: 50%;" /></a>
 <ol class="arabic simple" start="3">
-<li><p>AirGraph(RTM Editor)では，データセット保存先に出力される画像ファイルをシステム実行中に確認することが可能です</p></li>
+<li><p>AirGraph(RTM Editor)では，データセット保存先に出力される画像ファイルをシステム実行中に確認することが可能です．</p></li>
 </ol>
 <ul class="simple">
 <li><p>画面上部の[Tools]-[Dataset Viewer]を押下する．</p></li>
-<li><p>[Dataset Name]にて表示したいデータセットを選択する.</p></li>
-<li><p>選択したデータセット保存ディレクトリの最新画像が表示されます.システム実行中の場合は定期的に画像が更新されます.</p></li>
+<li><p>[Dataset Name]にて表示したいデータセットを選択する．</p></li>
+<li><p>選択したデータセット保存ディレクトリの最新画像が表示されます.システム実行中の場合は定期的に画像が更新されます．</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/dataset_viewer.png"><img alt="_images/dataset_viewer.png" class="align-center" src="_images/dataset_viewer.png" style="width: 50%;" /></a>
-</div>
-<div class="section" id="id2">
-<h2>7.2. Deep Learning開発からロボット開発への連携機能<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+<section id="id2">
+<h2><span class="section-number">7.2. </span>Deep Learning開発からロボット開発への連携機能<a class="headerlink" href="#id2" title="この見出しへのパーマリンク"></a></h2>
 <ol class="arabic simple">
 <li><p>AirGraph(Keras Editor)側でモデルを作成して保存すると，AirGraph(RTM Editor)側のコンポーネントのプロパティ画面でモデルの選択が可能となります．</p></li>
 </ol>
@@ -255,16 +172,16 @@
 <span class="cm"> * - Name:  dnn_model_path</span>
 <span class="cm"> * - DefaultValue: /opt/AirGraph/data/keras_models/MnistSample/MnistSample.json</span>
 <span class="cm"> */</span>
-<span class="n">std</span><span class="p">::</span><span class="kt">string</span> <span class="n">m_dnn_model_path</span><span class="p">;</span>
+<span class="n">std</span><span class="p">::</span><span class="kt">string</span><span class="w"> </span><span class="n">m_dnn_model_path</span><span class="p">;</span>
 <span class="c1">// &lt;/rtc-template&gt;</span>
 </pre></div>
 </div>
-<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span> <span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">RTC</span><span class="p">::</span><span class="n">ReturnCode_t</span><span class="w"> </span><span class="n">CppTest</span><span class="p">::</span><span class="n">onInitialize</span><span class="p">()</span>
 <span class="p">{</span>
-  <span class="c1">// Bind variables and configuration variable</span>
-  <span class="n">bindParameter</span><span class="p">(</span><span class="s">&quot;dnn_model_path&quot;</span><span class="p">,</span> <span class="n">m_dnn_model_path</span><span class="p">,</span> <span class="s">&quot;/opt/AirGraph/data/keras_models/MnistSample/MnistSample.json&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Bind variables and configuration variable</span>
+<span class="w">  </span><span class="n">bindParameter</span><span class="p">(</span><span class="s">&quot;dnn_model_path&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">m_dnn_model_path</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/opt/AirGraph/data/keras_models/MnistSample/MnistSample.json&quot;</span><span class="p">);</span>
 
-  <span class="k">return</span> <span class="n">RTC</span><span class="p">::</span><span class="n">RTC_OK</span><span class="p">;</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">RTC</span><span class="p">::</span><span class="n">RTC_OK</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -275,7 +192,7 @@
         <span class="n">OpenRTM_aist</span><span class="o">.</span><span class="n">DataFlowComponentBase</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">manager</span><span class="p">)</span>
         <span class="c1"># initialize of configuration-data.</span>
         <span class="c1"># &lt;rtc-template block=&quot;init_conf_param&quot;&gt;</span>
-        <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">         - Name:  dnn_model_path</span>
 <span class="sd">         - DefaultValue: /opt/AirGraph/data/keras_models/MnistSample/MnistSample.json</span>
 <span class="sd">        &quot;&quot;&quot;</span>
@@ -284,95 +201,83 @@
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>AirGraph(Keras Editor)でも，データセット保存先に保存されている画像ファイルを一覧することが可能です.</p></li>
+<li><p>AirGraph(Keras Editor)でも，データセット保存先に保存されている画像ファイルを一覧することが可能です．</p></li>
 </ol>
 <ul class="simple">
 <li><p>画面上部の[Tools]-[Dataset Viewer]を押下する．</p></li>
-<li><p>表示されたダイアログ上部の[Dataset Name]にて表示したいデータセットを選択する.</p></li>
-<li><p>選択したデータセット保存ディレクトリの画像が一覧表示されます.</p></li>
+<li><p>表示されたダイアログ上部の[Dataset Name]にて表示したいデータセットを選択する．</p></li>
+<li><p>選択したデータセット保存ディレクトリの画像が一覧表示される．</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/dataset_downloader.png"><img alt="_images/dataset_downloader.png" class="align-center" src="_images/dataset_downloader.png" style="width: 50%;" /></a>
-</div>
-<div class="section" id="airgraph">
-<h2>7.3. 複数マシンにおけるAirGraphの連携方法<a class="headerlink" href="#airgraph" title="このヘッドラインへのパーマリンク">¶</a></h2>
+</section>
+<section id="airgraph">
+<h2><span class="section-number">7.3. </span>複数マシンにおけるAirGraphの連携方法<a class="headerlink" href="#airgraph" title="この見出しへのパーマリンク"></a></h2>
 <p>ロボットにAirGraphをインストールすることで，ロボット・Deep Learningの両方の開発が可能ですが，
-Deep Learningの学習自体は高スペックなマシンで実行した方が良い場合もあります.
-AirGraphは複数マシン間でのデータセットの連携が可能です.</p>
-<p>連携を行うためには、あらかじめapplication.propertiesファイルに連携先のホスト名を定義しておく必要があります</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Airgraph for Robot Hostname (comma separated)
-airgraph.rtm_editor.server.uri=localhost:8080
-
-# Airgraph for Keras Hostname
-airgraph.keras_editor.server.uri=localhost:8080
-</pre></div>
+Deep Learningの学習自体は高スペックなマシンで実行した方が良い場合もあります．
+AirGraphは複数マシン間でのデータセットの連携が可能です．
+複数マシン間でデータセットの連携を行うためには，それぞれのマシンでAirGraphを起動しておく必要があります．</p>
+<p>連携を行うためには，あらかじめAirGraph(RTM Editor)上で，ホストの登録が必要となります．</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>複数のホストでAirGraphを使用する際，RTM Editorでのパッケージ・コンポーネント編集や実行を行うと，最新のソースコードが配置されているホストがどこになるか混乱が生じるため，開発用ホスト以外におけるRTM Editorの機能はホスト定義のみの利用にしておくことを推奨します．</p>
 </div>
 <ol class="arabic simple">
-<li><p>AirGraph(Keras Editor)では別マシン上のAirGraphからデータセットを取得することが可能です.</p></li>
+<li><p>AirGraph(Keras Editor)では別マシン上のAirGraphからデータセットを取得することが可能です．</p></li>
 </ol>
 <ul class="simple">
 <li><p>画面上部の[Tools]-[Dataset Viewer]を押下する．</p></li>
-<li><p>表示されたダイアログ下部の[Robot Name][Dataset Name]にて取得したいロボットのホスト名，データセット名を選択する.</p></li>
-<li><p>[Donwload]ボタンを押下すると選択したロボットから選択したデータセットの内容をダウンロードします.</p></li>
+<li><p>表示されたダイアログ下部の[Host Name][Dataset Name]にて取得したいロボットが配置されているホスト名，データセット名を選択する．</p></li>
+<li><p>[Donwload]ボタンを押下すると選択したホストから選択したデータセットの内容をダウンロードする．</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/dataset_downloader_2.png"><img alt="_images/dataset_downloader_2.png" class="align-center" src="_images/dataset_downloader_2.png" style="width: 50%;" /></a>
 <ol class="arabic simple" start="2">
 <li><p>AirGraph(RTM Editor)では別マシン上のAirGraphから学習済のモデルを取得することが可能です．</p></li>
 </ol>
 <ul class="simple">
+<li><p>コンポーネントプロパティ領域の[Keras Editor Host]から，ダウンロードしたいDNNモデルをもつAirGraphサーバーのホストを選択する．</p></li>
 <li><p>コンポーネントにDNNモデルが設定された状態で，コンポーネントのプロパティ設定エリアの[Update DNN Model]ボタンを押下する．</p></li>
-<li><p>定義されているAirGraphから設定されているDNNモデルをダウンロードします</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/update_dnn_model.png"><img alt="_images/update_dnn_model.png" class="align-center" src="_images/update_dnn_model.png" style="width: 50%;" /></a>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>コンポーネントをデプロイするだけでは，DNNモデルは配布されていないため，上記の手順を行う必要があります．</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>デプロイ先のパッケージのマシン上で，RTM Editorを用いてパッケージを編集することは推奨しません．そのため，デプロイ先のマシンのKeras EditorでDNNモデルを編集する場合は，ターミナル上でscpコマンド等を用いてDNNモデルを転送してください．</p>
 </div>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="end.html" class="btn btn-neutral float-right" title="8. ライセンス" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="keras.html" class="btn btn-neutral float-left" title="6. AirGraph (Keras Editor)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="keras.html" class="btn btn-neutral float-left" title="6. AirGraph (Keras Editor)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="end.html" class="btn btn-neutral float-right" title="8. ライセンス" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018, System Engineering Consultants Co., LTD.
-
-    </p>
+    <p>&#169; Copyright 2023, Systems Engineering Consultants Co., LTD..</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
